@@ -1,0 +1,88 @@
+/* Apply global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Smooth hover effect */
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading styling */
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Quote box styling */
+.quote_box {
+  position: relative;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 18px;
+  color: #555;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add stylish quotation marks */
+.quote_box::before,
+.quote_box::after {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.quote_box::before {
+  content: "“";
+  left: -10px;
+  top: -10px;
+}
+
+.quote_box::after {
+  content: "”";
+  right: -10px;
+  bottom: -10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+      padding: 20px;
+      max-width: 90%;
+  }
+  
+  h1 {
+      font-size: 22px;
+  }
+  
+  .quote_box {
+      font-size: 16px;
+      padding: 15px;
+  }
+}
